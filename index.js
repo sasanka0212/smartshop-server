@@ -10,7 +10,7 @@ const userRouter = require('./routes/user');
 
 //INIT process
 const app = express();      
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 const DB = "mongodb+srv://sasanka:sasanka321@cluster0.d6gu8r4.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
 
 //set middleware (Mostly format the data or update the data as per client request)
